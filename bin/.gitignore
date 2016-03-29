@@ -1,6 +1,4 @@
-/abstractFactory/
-/api/
-/dao/
-/factory/
-/WaterData.class
-/service/
+/api
+/dao
+/factory
+/service

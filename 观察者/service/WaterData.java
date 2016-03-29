@@ -1,9 +1,6 @@
 package service;
 
 import java.util.ArrayList;
-import java.util.Set;
-
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 import service.api.Observers;
 import service.api.Subject;
@@ -15,24 +12,24 @@ public class WaterData implements Subject {
 
 	}
 
-	public String Temperature;/* ÆøÎÂ */
-	public String Humidty;/* Êª¶È */
-	public String Pressure;/* ÆøÑ¹ */
-	public ArrayList<Observers> observers;/* ÆøÑ¹ */
+	public String Temperature;/* ï¿½ï¿½ï¿½ï¿½ */
+	public String Humidty;/* Êªï¿½ï¿½ */
+	public String Pressure;/* ï¿½ï¿½Ñ¹ */
+	public ArrayList<Observers> observers;/* ï¿½ï¿½Ñ¹ */
 
-	/* ÆøÎÂ */
+	/* ï¿½ï¿½ï¿½ï¿½ */
 	public String getTemperature() {
-		return "1¡ã";
+		return "100";
 	}
 
-	/* Êª¶È */
+	/* Êªï¿½ï¿½ */
 	public String getHumidty() {
-		return "25";
+		return "251";
 	};
 
-	/* ÆøÑ¹ */
+	/* ï¿½ï¿½Ñ¹ */
 	public String getPressure() {
-		return "ÏÂ½µ";
+		return "1111";
 	};
 
 	void measurementsChanged() {
@@ -68,5 +65,12 @@ public class WaterData implements Subject {
 		this.Pressure = Pressure;
 		measurementsChanged();
 	}
+	public static void main(String arg[]) {
 
+		WaterData waterData = new WaterData();
+		CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(waterData);
+		ZyfConditionsDisplay zyfConditionsDisplay = new ZyfConditionsDisplay(waterData);
+		waterData.setMeasurements("223", "33", "ä¸Šå‡");
+
+	}
 }
