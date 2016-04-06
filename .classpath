@@ -4,6 +4,7 @@
 	<classpathentry kind="src" path="策略"/>
 	<classpathentry kind="src" path="工厂"/>
 	<classpathentry kind="src" path="观察者"/>
+	<classpathentry kind="src" path="Wrapper"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
