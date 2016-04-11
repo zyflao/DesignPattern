@@ -1,4 +1,4 @@
-package Dao;
+package SingletonDao;
 
 public enum Singleton {
 	INSTANCE01,INSTANCE02;

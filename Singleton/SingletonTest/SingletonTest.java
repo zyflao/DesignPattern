@@ -1,6 +1,6 @@
-package Test;
+package SingletonTest;
 
-import Dao.Singleton;
+import SingletonDao.Singleton;
 
 public class SingletonTest
 {
