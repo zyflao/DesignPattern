@@ -6,20 +6,20 @@ public class SingletonTest
 {
     public static void main(String[] args)
     {
-        Singleton instance01=Singleton.INSTANCE01;
+        Singleton instance01=Singleton.HR;
         instance01.setName("terje");
         System.out.println(instance01.getName());
         
-        Singleton instance02=Singleton.INSTANCE01;
+        Singleton instance02=Singleton.HR;
         System.out.println(instance02.getName());
         
-        Singleton instance03=Singleton.INSTANCE02;
-        instance03.setName("liu");
-        System.out.println(instance03.getName());
+        Singleton DX=Singleton.DX;
+        DX.setName("liu");
+        System.out.println(DX.getName());
         
-        Singleton instance04=Singleton.INSTANCE02;
-        instance04.setName("liu");
-        System.out.println(instance04.getName());
+        Singleton SY=Singleton.DX;
+        SY.setName("liu");
+        System.out.println(SY.getName());
 
     }
 

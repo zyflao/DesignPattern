@@ -1,8 +1,10 @@
 package SingletonDao;
 
 public enum Singleton {
-	INSTANCE01,INSTANCE02;
-	
+	HR,DX,SY,BJ;
+	 Singleton(){
+		System.out.println("bengin");
+	}
     private String name;
     
     public String getName()
@@ -16,20 +18,21 @@ public enum Singleton {
      
      public static void main(String[] args)
      {
-         Singleton instance01=Singleton.INSTANCE01;
-         instance01.setName("terje");
-         System.out.println(instance01.getName());
+         Singleton HR=Singleton.HR;
+         HR.setName("怀柔");
+         System.out.println(HR.getName());
+       
          
-         Singleton instance02=Singleton.INSTANCE01;
+        /* Singleton instance02=Singleton.HR;
          System.out.println(instance02.getName());
          
-         Singleton instance03=Singleton.INSTANCE02;
-         instance03.setName("liu");
-         System.out.println(instance03.getName());
+         Singleton DX=Singleton.DX;
+         DX.setName("大兴");
+         System.out.println(DX.getName());
          
-         Singleton instance04=Singleton.INSTANCE02;
-         instance04.setName("liu");
-         System.out.println(instance04.getName());
-
+         Singleton SY=Singleton.SY;
+         SY.setName("顺义");
+         System.out.println(SY.getName());
+         System.out.println(DX.getName());*/
      }
  }
