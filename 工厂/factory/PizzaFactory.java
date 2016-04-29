@@ -1,17 +1,17 @@
 package factory;
 
-import factory.pizza.HaiXian;
 import factory.pizza.Pizza;
-import factory.pizza.ShiJin;
 
-public class PizzaFactory {
-	public Pizza pizzaCreat(String type) {
-		Pizza pizza = null;
-		if (type.equals("ShiJin")) {
-			pizza = new ShiJin();
-		} else if (type.equals("HaiXian")) {
-			pizza = new HaiXian();
-		}
-		return pizza;
+public   class PizzaFactory {
+	public static <T extends Pizza> T createPizza(Class<T> c){
+		Pizza p=null;
+			try {
+				p=(T)Class.forName(c.getName()).newInstance();
+			} catch (Exception e) {
+				System.out.println("创建错误");
+				e.printStackTrace();
+			}
+		return (T) p;
 	}
+
 }

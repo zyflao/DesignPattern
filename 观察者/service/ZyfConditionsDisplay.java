@@ -13,7 +13,7 @@ public class ZyfConditionsDisplay implements Observers, DisplayElement{
 	public String Temperature;/* 气温 */
 	public String Humidty;/* 湿度*/
 	public String Pressure;/* ��ѹ */
-	public Subject weatherData;/* ��ѹ */
+	public Subject weatherData;/**/
 
 	@Override
 	public void Display() {

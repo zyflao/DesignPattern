@@ -71,7 +71,7 @@ public class WaterData implements Subject {
 		CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(waterData);
 		ZyfConditionsDisplay zyfConditionsDisplay = new ZyfConditionsDisplay(waterData);
 		waterData.setMeasurements("223", "33", "上升");
-		waterData.setMeasurements("11", "3", "xiajiang");
+		waterData.setMeasurements("11", "3", "下降");
 
 	}
 }

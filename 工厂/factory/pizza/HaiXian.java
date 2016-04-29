@@ -1,9 +1,22 @@
 package factory.pizza;
 
-public class HaiXian extends Pizza{
-
+public abstract class  HaiXian implements Pizza{
+	
 	public HaiXian() {
-	System.out.println("º£ÏÊÅûÈø");
+	System.out.println("æµ·é²œpizza");
+	}
+	public void Hi() {
+		System.out.println("æµ·é²œpizza+æŒ‡å®šæµ·é²œ");
+		
+	}
+	public void Shu() {
+		System.out.println("æµ·é²œpizza+æŒ‡å®šè”¬èœ");
+		
+	}
+	@Override
+	public void ag() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

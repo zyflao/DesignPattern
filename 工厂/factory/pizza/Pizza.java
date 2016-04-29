@@ -1,15 +1,12 @@
 package factory.pizza;
 
+public interface Pizza {
 
-public abstract class Pizza {
+	public void Hi();
 
-	public void Hi() {
-		System.out.println("º–»‚");
-		
-	}
-	public void Shu() {
-		System.out.println("º–≤À");
-		
-	}
-	
+	public void Shu();
+
+	public void ag();
+
+	public void size(String s);
 }

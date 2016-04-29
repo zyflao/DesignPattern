@@ -18,7 +18,7 @@ public class CurrentConditionsDisplay implements Observers, DisplayElement {
 
 	@Override
 	public void Display() {
-		System.out.println("气温:" + Temperature + ",湿度:" + Humidty);
+		System.out.println("告示1:气温:" + Temperature + ",湿度:" + Humidty);
 
 	}
 
@@ -28,6 +28,4 @@ public class CurrentConditionsDisplay implements Observers, DisplayElement {
 		this.Humidty = Humidty;
 		Display();
 	}
-
-
 }

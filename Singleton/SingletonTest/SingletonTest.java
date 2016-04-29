@@ -5,7 +5,7 @@ import SingletonDao.Singleton;
 public class SingletonTest
 {
     public static void main(String[] args)
-    {
+    {	
         Singleton instance01=Singleton.HR;
         instance01.setName("terje");
         System.out.println(instance01.getName());

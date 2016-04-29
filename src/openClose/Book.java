@@ -28,7 +28,7 @@ public class Book {
 			this.auth=_auth;
 		}
 	public static void main(String[] args) {
-		Book b = new Book("java", "2", "zyf");
+		Book b = new Book("java", "20", "zyf");
 		System.out.println("书名:"+b.getName()+",价格："+b.getPrice()+",作者:"+b.getAuth());
 	}
 }
