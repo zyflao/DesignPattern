@@ -2,10 +2,10 @@ package TemplateDao;
 
 
 public class Tea extends YinLiao{
-	private static boolean Sugar; 
+	private static boolean Sugarflag; 
 
-	 public Tea(boolean T){
-		this.Sugar = T;
+	public Tea(boolean T){
+		this.Sugarflag = T;
 	}
 	@Override
 	protected void doSomething() {
@@ -24,8 +24,8 @@ public class Tea extends YinLiao{
 		System.out.println("+热水");
 	}
 	
-	protected  boolean isSugar() {
-		return this.Sugar;
+	public  boolean isSugar() {
+		return this.Sugarflag;
 	}
 	
 }

@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="策略"/>
-	<classpathentry kind="src" path="工厂"/>
-	<classpathentry kind="src" path="观察者"/>
+	<classpathentry kind="src" path="factory"/>
+	<classpathentry kind="src" path="observes"/>
 	<classpathentry kind="src" path="Wrapper"/>
 	<classpathentry kind="src" path="Singleton"/>
 	<classpathentry kind="src" path="TemplateMethod"/>

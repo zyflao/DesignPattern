@@ -1,2 +1,10 @@
-/test/
+/SingletonDao/
+/SingletonTest/
 /TemplateDao/
+/api/
+/dao/
+/factory/
+/openClose/
+/server/
+/service/
+/test/
