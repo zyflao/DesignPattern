@@ -21,7 +21,7 @@ public class Tea extends YinLiao{
 
 	@Override
 	protected void Sugar() {
-		System.out.println("+热水");
+		System.out.println("+糖");
 	}
 	
 	public  boolean isSugar() {

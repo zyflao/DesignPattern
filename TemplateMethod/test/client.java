@@ -6,11 +6,11 @@ import TemplateDao.YinLiao;
 
 public class client {
 	public static void main(String[] args) {
-		YinLiao y = new Tea(true);
+	//	YinLiao y = new Tea(true);
 		Coffee c = new Coffee();
-		c.setSugar(false);
+		c.setSugar(true);
 		
 		c.templateMethod();
-		y.templateMethod();
+		//y.templateMethod();
 	}
 }
