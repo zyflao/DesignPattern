@@ -7,7 +7,7 @@
 	<classpathentry kind="src" path="GCTest"/>
 	<classpathentry kind="src" path="JDKCode"/>
 	<classpathentry kind="src" path="ThreadDome"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Sun JDK 1.6.0_13"/>
+	<classpathentry kind="src" path="javaSocket"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_66"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
