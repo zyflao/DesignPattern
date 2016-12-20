@@ -2,13 +2,18 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="策略"/>
-	<classpathentry kind="src" path="工厂"/>
-	<classpathentry kind="src" path="观察者"/>
 	<classpathentry kind="src" path="GCTest"/>
 	<classpathentry kind="src" path="JDKCode"/>
 	<classpathentry kind="src" path="ThreadDome"/>
 	<classpathentry kind="src" path="javaSocket"/>
+    <classpathentry kind="src" path="Wrapper"/>
+        <classpathentry kind="src" path="ThreadDome"/>
+            <classpathentry kind="src" path="TemplateMethod"/>
+                <classpathentry kind="src" path="spi"/>
+                <classpathentry kind="src" path="Singleton"/>
+                <classpathentry kind="src" path="Proxy"/>
+                <classpathentry kind="src" path="Proxy"/>
+                <classpathentry kind="src" path="observes"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_66"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
-

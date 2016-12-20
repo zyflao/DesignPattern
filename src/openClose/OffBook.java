@@ -3,10 +3,10 @@ package openClose;
 import java.util.ArrayList;
 import java.util.List;
 
-public class offBook extends Book{
+public class OffBook extends Book{
 	private String offprice;
 	private int off = 8;
-	public offBook(String _name, String _price, String _auth) {
+	public OffBook(String _name, String _price, String _auth) {
 		super(_name, _price, _auth);
 		this.offprice = _price;
 	}
@@ -20,9 +20,9 @@ public class offBook extends Book{
 	}
 	
 	public static void main(String[] args) {
-		offBook b = new offBook("java", "100", "zyf");
-		offBook a= new offBook("java介绍", "10", "zyf");
-		List<offBook> l = new ArrayList<offBook>();
+		OffBook b = new OffBook("java", "100", "zyf");
+		OffBook a= new OffBook("java介绍", "10", "zyf");
+		List<OffBook> l = new ArrayList<OffBook>();
 		l.add(b);
 		l.add(a);
 		for(Book c:l){
