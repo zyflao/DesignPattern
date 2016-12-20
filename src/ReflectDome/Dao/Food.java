@@ -1,6 +1,6 @@
 package ReflectDome.Dao;
 
-public interface Foods {
+public interface Food {
 
 	double cost(double weight);
 

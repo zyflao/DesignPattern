@@ -2,10 +2,10 @@ package ReflectDome.Dao.impl;
 
 import java.math.BigDecimal;
 
-import ReflectDome.Dao.Foods;
+import ReflectDome.Dao.Food;
 
-public class Toast implements Foods {
-	double costPer;// 一块钱一斤
+public class Toast implements Food {
+	double costPer;// 块钱一斤
 
 	public Toast(double costPer) {
 		this.costPer = costPer;
