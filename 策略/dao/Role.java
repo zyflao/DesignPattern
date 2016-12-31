@@ -5,16 +5,17 @@ import api.Wuqi;
 import api.impl.Dagger;
 import api.impl.KingShow;
 import api.impl.QueenShow;
+
 /*
- * ²ßÂÔÄ£Ê½ÊÇ°É¿É±äµÄ¹¦ÄÜ·ÅÔÚ³éÏóÀà ÊôĞÔ½Ó¿ÚÖĞ£¬Éú²úset·½·¨£¬×ÓÀà¼Ì³Ğ³éÏó·½·¨£¬µ÷ÓÃµÄ½Ó¿ÚÊµÏÖ²»Í¬£¬Ôòµ÷ÓÃ·½·¨±íÏÖ²»Í¬¡£
- * ¾ÛºÏ£¬¶àÓÃhava a£¬ÉÙÓÃis a
- * ±à³ÌÖĞĞ´ºÃ²»±äµÄ£¬°Ñ¿É±äµÄ ÌáÁ¶¡£ 
+ * ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½Ç°É¿É±ï¿½Ä¹ï¿½ï¿½Ü·ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô½Ó¿ï¿½ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½ï¿½setï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³Ğ³ï¿½ï¿½ó·½·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÃµÄ½Ó¿ï¿½Êµï¿½Ö²ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½Í¬ï¿½ï¿½
+ * ï¿½ÛºÏ£ï¿½ï¿½ï¿½ï¿½ï¿½hava aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½is a
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½Ã²ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ñ¿É±ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
  */
 public class Role {
 	Wuqi wuqi;
 	Show show;
 
-	public void RoleSaySelf() { /*¾ÛºÏ ½Ó¿Ú¶¨Òå²»Í¬µÄÊµÏÖ ,¶¨ÒåºÃµÄ·½·¨¡£ÊµÏÖÓÉÀà×Ô¼º¾ö¶¨*/
+	public void RoleSaySelf() { /* ï¿½Ûºï¿½ ï¿½Ó¿Ú¶ï¿½ï¿½å²»Í¬ï¿½ï¿½Êµï¿½ï¿½ ,ï¿½ï¿½ï¿½ï¿½ÃµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ */
 		show.Say();
 	}
 
@@ -24,7 +25,7 @@ public class Role {
 
 	public void setWuqi(Wuqi w) {
 		this.wuqi = w;
-		System.out.println("ÎäÆ÷¸ü»»£¡");
+		System.out.println("change equit");
 	}
 
 	public void setShow(Show show) {
@@ -32,11 +33,12 @@ public class Role {
 	}
 
 	public static void main(String[] args) {
-		King king = new King();/* ¹úÍõÓĞ×Ô¼ºµÄshowºÍÎäÆ÷¡£ÔÚ×Ô¼ºµÄ³õÊ¼µÄÊ±ºò¶¨Òå*/
-		// Queen queen = new Queen();
-		king.RoleSaySelf(); /*½éÉÜ×Ô¼º*/
-		king.haveWuqi();    
-		king.setWuqi(new Dagger());king.haveWuqi();
+		King king = new King();
+		king.RoleSaySelf();
+		king.haveWuqi();
+
+		king.setWuqi(new Dagger());
+		king.haveWuqi();
 		king.setShow(new QueenShow());
 		king.RoleSaySelf();
 	}

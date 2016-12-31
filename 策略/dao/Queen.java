@@ -1,8 +1,9 @@
 package dao;
 
+import api.Show;
+import api.Wuqi;
 import api.impl.QueenShow;
 import api.impl.Sword;
-import api.impl.OxeWuqi;
 
 public class Queen extends Role {
 	Queen() {
@@ -11,5 +12,21 @@ public class Queen extends Role {
 		/*
 		 * wuqi.doThing(); show.Say();
 		 */
+	}
+
+	Wuqi wuqi;
+	Show show;
+
+	Queen(Wuqi wuqi, Show show) {
+		this.wuqi = wuqi;
+		this.show = show;
+	}
+
+	void roleSaySelf() {
+		this.show.Say();
+	}
+
+	void haveWuqi() {
+		this.wuqi.doThing();
 	}
 }

@@ -2,11 +2,12 @@ package SingletonDao;
 
 public class Emperpor {
 	private final static Emperpor em = new Emperpor();
-	private Emperpor(){
-		
+
+	private Emperpor() {
+
 	}
-	
-	public void say(){
+
+	public void say() {
 		System.out.println("yunfeng");
 	}
 
@@ -14,16 +15,19 @@ public class Emperpor {
 		return em;
 	}
 }
+
 class SingletonTheard {
-private static SingletonTheard singleton = null;
-//限制产生多个对象
-private SingletonTheard(){
-}
-//通过该方法获得实例对象
-public static SingletonTheard getSingleton(){
-if(singleton == null){
-singleton = new SingletonTheard();
-}
-return singleton;
-}
+	private static SingletonTheard singleton = null;
+
+	// 限制产生多个对象 c
+	private SingletonTheard() {
+	}
+
+	// 通过该方法获得实例对象
+	public static SingletonTheard getSingleton() {
+		if (singleton == null) {
+			singleton = new SingletonTheard();
+		}
+		return singleton;
+	}
 }
