@@ -11,7 +11,7 @@ import java.net.UnknownHostException;
 
 public class Client {
 	public static void main(String[] args) {
-		// 1 创景socket ，制定服务器地址和端口
+		// 1 创建socket ，制定服务器地址和端口
 		try {
 			Socket socket = new Socket("localhost", 8888);
 			// 输出流 ，给服务端发送消息

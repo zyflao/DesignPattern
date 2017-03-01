@@ -1,7 +1,5 @@
 package TemplateDao;
 
-import service.main;
-
 public abstract class Hook {
 	abstract void wash();
 

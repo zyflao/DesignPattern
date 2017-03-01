@@ -1,6 +1,5 @@
 package ReflectDome;
 
-
 public class FirstDome {
 	public static void main(String[] args) {
 
