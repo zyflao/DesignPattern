@@ -1,3 +1,9 @@
-/service/
-/META-INF/
-/TemplateDao/
+/factory/
+/semple/
+/FactoryMethod/
+/factorypizza/
+/AbstractFactory/
+/SingletonDao/
+/Command/
+/adapter.class
+/adapter/

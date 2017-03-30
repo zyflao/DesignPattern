@@ -16,8 +16,11 @@ public class Emperpor {
 	}
 }
 
+/**
+ * volatile 多线程同步 synchronized 保证多线程下加锁
+ */
 class SingletonTheard {
-	private static SingletonTheard singleton = null;
+	private volatile static SingletonTheard singleton = null;
 
 	// 限制产生多个对象 c
 	private SingletonTheard() {
@@ -26,7 +29,11 @@ class SingletonTheard {
 	// 通过该方法获得实例对象
 	public static SingletonTheard getSingleton() {
 		if (singleton == null) {
-			singleton = new SingletonTheard();
+			synchronized (SingletonTheard.class) {
+				if (singleton == null) {
+					singleton = new SingletonTheard();
+				}
+			}
 		}
 		return singleton;
 	}

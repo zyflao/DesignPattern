@@ -1,0 +1,23 @@
+事务：是一组增删改操作，全成功或者全失败
+
+interface PlatformTransactionManager 事务管理器
+
+TransactionDef事务(传播规则隔离级别)参数初始化
+隔离级别
+default
+read_uncommited
+read_committed 避免脏读(orecl)
+repeatable_read 避免脏读和不可重复读 (mysql)
+seralizable 避免以下三种
+
+脏读：事务a 读到了事务b没有提交的数据
+
+不可重复读：事务a 多次读取数据，数据不一致
+
+幻读：事务a 读取了事务b已经提交的记录.
+查询结果不一致
+
+Transactionstatus 事务状态
+----------------------------------------
+编程式事务 实际中使用少，需要编写代码
+声明式事务 通过xml配置 (代码侵入小)aop的方式实现 
