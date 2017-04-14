@@ -1,11 +1,17 @@
 package FactoryMethod;
 
-public class BMWDriver extends Driver {
+public class BMWDriver implements IDriver {
 
 	@Override
-	public ICar DriverCar() {
+	public IBusinessCar BusinessCarDriver() {
 		// TODO Auto-generated method stub
-		return new BMWCar();
+		return new BMWBusinessCar();
+	}
+
+	@Override
+	public ISportCar SportCarDriver() {
+		// TODO Auto-generated method stub
+		return new BMWSportCar();
 	}
 
 }

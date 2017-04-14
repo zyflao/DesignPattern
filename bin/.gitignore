@@ -1,9 +1,4 @@
-/factory/
-/semple/
-/FactoryMethod/
-/factorypizza/
-/AbstractFactory/
-/SingletonDao/
-/Command/
-/adapter.class
-/adapter/
+/jdk7/
+/jdk8/
+/behavior/
+/collection/

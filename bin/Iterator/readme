@@ -1,0 +1,3 @@
+Iterator is different  container charge into Iterator object 。
+clend only use container  object to use contends
+聚合元素，不暴露内部表象

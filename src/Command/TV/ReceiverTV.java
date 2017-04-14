@@ -13,7 +13,7 @@ public class ReceiverTV implements Appliance {
 	 * 真正执行命令相应的关闭操作
 	 */
 	public void actionClose() {
-		System.out.println("actionCl    ose");
+		System.out.println("actionClose");
 	}
 
 	/**

@@ -12,21 +12,39 @@ import java.util.List;
  * lambda
  */
 public class CLambda {
-	public static List<String> names = Arrays.asList("311", "213", "14", "45");
+
+	public List<Integer> names = Arrays.asList(311, 213, 14, 45);
 
 	// before jdk8.
-	public void sortString(List<String> names) {
-
-		Collections.sort(names, new Comparator<String>() {
-			@Override
-			public int compare(String a, String b) {
-				return a.compareTo(b);
+	public List sortString(List<Integer> names) {
+		User user1 = new User();
+		user1.setName("a");
+		user1.setOrder(1);
+		User user2 = new User();
+		user2.setName("b");
+		user2.setOrder(5);
+		List<User> list = new ArrayList<User>();
+		list.add(user2);
+		list.add(user1);
+		Collections.sort(list, new Comparator<User>() {
+			public int compare(User arg0, User arg1) {
+				return arg0.getOrder().compareTo(arg1.getOrder());
 			}
 		});
+		for (User u : list) {
+			System.out.println(u.getOrder());
+		}
+		return list;
 	}
 
-	public void lambdaSort(List<String> names) {
-		names.sort((String a, String b) -> a.compareTo(b));
+	public void lambdaSort(List<Integer> names) {
+		names.sort((Integer a, Integer b) -> a.compareTo(b));
+	}
+
+	public void lambdaSortUser(List<User> names) {
+
+		names.sort((User a, User b) -> b.getOrder().compareTo(a.getOrder()));
+		names.forEach(obj -> System.out.println("" + obj.toString()));
 	}
 
 	/*
@@ -40,8 +58,8 @@ public class CLambda {
 
 		map.forEach((k, v) -> {
 			System.out.println("Item : " + k + " Count : " + v);
-			if ("1".equals(k)) {
-				System.out.println("Hello 1");
+			if ("3".equals(k)) {
+				System.out.println("Hello " + k);
 			}
 		});
 	}
@@ -56,6 +74,8 @@ public class CLambda {
 		list.add(3);
 		list.add(5);
 
+		list.forEach(obj -> System.out.println("haha:" + obj.toString()));
+
 		list.forEach(System.out::println);
 		// sort
 		list.sort((Integer h1, Integer h2) -> h1.compareTo(h2));
@@ -64,22 +84,35 @@ public class CLambda {
 			System.out.println("sort after:" + l);
 		});
 
-		list.forEach(l -> {
-			System.out.println("value : " + l);
-			if ("11".equals(l)) {
-				System.out.println("Hello " + l);
+		list.forEach(l1 -> {
+			if (11 == l1) {
+				System.out.println("Hello " + l1);
 			}
 		});
 	}
 
 	public static void main(String[] args) {
+		User user1 = new User();
+		user1.setName("a");
+		user1.setOrder(1);
+		User user2 = new User();
+		user2.setName("b");
+		user2.setOrder(5);
+		List<User> list = new ArrayList<User>();
+		list.add(user2);
+		list.add(user1);
+
 		// TODO Auto-generated method stub
 		// new CLambda().sortString(names);
-		new CLambda().lambdaSort(names);
+		CLambda lambda = new CLambda();
+		List<Integer> l = lambda.sortString(lambda.names);
+		System.out.println(l.toString());
 
-		// Collections.sort(names, (a, b) -> a.compareTo(b));
-		names.forEach(System.out::println);
+		lambda.lambdaSort(lambda.names);
 
-		new CLambda().lambdaList();
+		lambda.names.forEach(System.out::println);
+
+		lambda.lambdaSortUser(list);
+		lambda.lambdaList();
 	}
 }
