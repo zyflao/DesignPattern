@@ -1,4 +1,6 @@
-/jdk7/
-/jdk8/
 /behavior/
-/collection/
+/Command/
+/StructureMode/
+/build/
+/test/
+/TemplateDao/

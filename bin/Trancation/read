@@ -5,9 +5,14 @@ interface PlatformTransactionManager 事务管理器
 TransactionDef事务(传播规则隔离级别)参数初始化
 隔离级别
 default
-read_uncommited
-read_committed 避免脏读(orecl)
-repeatable_read 避免脏读和不可重复读 (mysql)
+read_uncommited  事务a读取 数据,事务b 修改了数据没有提交
+
+read_committed 避免脏读(orecl) 事务a读取数据,事务b修改数据提交，a在读取b修改的数据。两次数据不一致
+
+repeatable_read 避免脏读和不可重复读 (mysql) 事务a 读取数据时，不准许其他线程修改 数据
+
+
+
 seralizable 避免以下三种
 
 脏读：事务a 读到了事务b没有提交的数据
